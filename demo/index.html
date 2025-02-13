@@ -98,13 +98,13 @@
     <script type="module">
       import {StarterApp} from "/dist/bundle.dev.min.esm.js";
 
-      window.StarterApp = StarterApp;
+      window.StarterAppEsm = StarterApp;
     </script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {
 
-          StarterApp.run('StarterApp running from ESM bundle with StarterAppEsm alias ... ');
+          StarterAppEsm.run('StarterApp running from ESM bundle with StarterAppEsm alias ... ');
 
       });
     </script>
