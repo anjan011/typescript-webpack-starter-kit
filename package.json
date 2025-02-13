@@ -1,0 +1,63 @@
+{
+  "name": "typescript-webpack-starter",
+  "version": "1.0.0",
+  "changelog": "See CHANGELOG.md for details.",
+  "description": "A starter pack for TypeScript and WebPack",
+  "exports": {
+    "import": "./dist/bundle.min.esm.js",
+    "require": "./dist/bundle.min.umd.js",
+    "default": "./dist/bundle.min.umd.js"
+  },
+  "types": "types/ts/index.d.ts",
+  "files": [
+    "dist/styles.min.css",
+    "dist/bundle.min.esm.js",
+    "dist/bundle.min.umd.js",
+    "types/**/*.d.ts",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "starter",
+    "typescript",
+    "webpack",
+    "template"
+  ],
+  "author": "Anjan Bhowmik",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^11.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.10",
+    "@types/underscore": "^1.13.0",
+    "@webpack-cli/generators": "^3.0.7",
+    "css-loader": "^7.1.2",
+    "jest": "^29.7.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.83.4",
+    "sass-loader": "^16.0.4",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "underscore": "^1.13.7",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build:production": "webpack --mode production",
+    "build:umd": "webpack --config webpack.config.umd.js",
+    "build:umd:production": "webpack --config webpack.config.umd.js --mode production",
+    "build:all": "npm run build && npm run build:umd",
+    "build:all:production": "npm run build:production && npm run build:umd:production",
+    "test": "jest",
+    "watch": "webpack --watch",
+    "serve": "npx webpack serve --mode development",
+    "php:server": "php -S 127.0.0.1:9000 -t ./",
+    "build:readme": "node merge-markdown.js",
+    "prepublishOnly": "npm run build:all:production"
+  },
+  "type": "module"
+}

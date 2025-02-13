@@ -1,0 +1,39 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap";
+
+body {
+    background-color: rgba(144, 238, 144, 0.28);
+    font-family: 'Roboto Serif',serif;
+    font-size: 18px;
+}
+
+body * {
+    font-family: inherit;
+}
+
+code {
+    font-size: 1em;
+}
+
+ol,ul {
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 2rem;
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    margin-bottom: 0.75em;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+}

@@ -1,24 +1,3 @@
-## TypeScript + WebPack Starter
-
-### Installing
-
-This a starter pack to get your `TypeScript` environment quickly setup with the aid of `WebPack`.
-
-Once you have cloned the repository, first you need to do is run -
-
-```shell
-npm install
-```
-
-### Libraries installed
-
-These are the highlights of the libraries installed ...
-
-- `TypeScript` + `WebPack`
-- `css-loader` + `sass` + `sass-loader` : To allow sass -&gt; css compilation
-- `mini-css-extract-plugin` : Extracting CSS or SASS imported in `TypeScript` files.
-- `jest` : Testing
-
 ### NPM run commands
 
 Look into the `scripts` section of `package.json` to see all available npm run scripts. Also, you can do `npm run` t see all available run commands.
